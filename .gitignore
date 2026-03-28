@@ -1,0 +1,48 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+dist-vue/
+build/
+out/
+
+# ESLint and Prettier cache
+.eslintcache
+.prettiercache
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+vite-log.txt
+*.log
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Electron
+*.zip
+*.dmg
+*.exe
+*.AppImage
+*.deb
+
+# Temporary files
+*.tmp
+*.temp
+.cache/

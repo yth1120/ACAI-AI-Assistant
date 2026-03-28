@@ -1,0 +1,69 @@
+{
+  "name": "acai-assistant",
+  "version": "2.0.0",
+  "description": "功能强大的私人AI助手 - 支持多种AI服务提供商",
+  "main": "dist/main.js",
+  "scripts": {
+    "dev": "vite",
+    "build:vue": "vite build",
+    "build:main": "tsc -p tsconfig.node.json --outDir dist",
+    "preview": "vite preview",
+    "start": "electron .",
+    "build": "npm run build:vue && npm run build:main && electron-builder",
+    "build-win": "npm run build:vue && npm run build:main && electron-builder --win --x64",
+    "build-mac": "npm run build:vue && npm run build:main && electron-builder --mac",
+    "build-linux": "npm run build:vue && npm run build:main && electron-builder --linux",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage"
+  },
+  "keywords": [
+    "ai",
+    "assistant",
+    "deepseek",
+    "openai",
+    "claude",
+    "electron",
+    "desktop",
+    "chatbot",
+    "translation",
+    "code-assistant",
+    "vue"
+  ],
+  "author": {
+    "name": "ACAI Team",
+    "email": "support@acai.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/acai-assistant"
+  },
+  "dependencies": {
+    "@vicons/fluent": "^0.13.0",
+    "@vueuse/core": "^10.0.0",
+    "axios": "^1.6.0",
+    "duck-duck-scrape": "^2.2.7",
+    "eventsource-parser": "^1.0.0",
+    "mammoth": "^1.12.0",
+    "naive-ui": "^2.38.0",
+    "pinia": "^2.1.7",
+    "vue": "^3.4.0",
+    "vue-router": "^4.2.5"
+  },
+  "devDependencies": {
+    "@types/node": "^25.2.1",
+    "@vitejs/plugin-vue": "^5.0.0",
+    "@vitest/coverage-v8": "^1.0.0",
+    "electron": "^34.5.8",
+    "electron-builder": "^24.6.4",
+    "jsdom": "^23.0.0",
+    "terser": "^5.46.1",
+    "typescript": "^5.9.3",
+    "vite": "^5.0.0",
+    "vitest": "^1.0.0"
+  },
+  "build": {
+    "extends": "./electron-builder.config.js"
+  }
+}
